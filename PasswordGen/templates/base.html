@@ -1,0 +1,30 @@
+{% extends "structure.html" %}
+
+{% block title %}Password Generator{% endblock %}
+
+{% block main %}
+
+<div class="center">
+    <table>
+        <tr>
+          <th colspan="2"><h4><strong>PASSWORD GENERATOR</strong></h4></th>
+        </tr>
+        <tr>
+          <td style="background-color:hsla(0, 36%, 96%, 0.911)" colspan="2"><h3>{{ message }} <br> {{ err_msg }}</h3></td>
+        </tr>
+        <tr>
+          <td><a href="/incsym"><button>Include Symbols</button></a></td>
+          <td><a href="/incnum"><button>Include Numbers</button></a></td>
+        </tr>
+        <tr>
+          <td><a href="/inclower"><button>Include LC Chars.</button></a></td>
+          <td><a href="/incupper"><button>Include UC Chars.</button></a></td>
+        </tr>
+        <tr>
+          <td><a href="/clear"><button><strong>Clear Screen</strong></button></a></td>
+          <td><a href="/generator"><button><strong>Generate</strong></button></a></td>
+        </tr>
+    </table>
+</div>
+
+{% endblock main %}
